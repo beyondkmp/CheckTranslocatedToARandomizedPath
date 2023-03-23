@@ -2,16 +2,13 @@
 #include <sys/param.h>
 #include <sys/mount.h>
 
-
 #include <napi.h>
 
 
 Napi::Value checkTranslocatedToARandomizedPath(const Napi::CallbackInfo &info)
 {
-    NSString *filePath = [[NSBundle mainBundle] bundlePath];
-    NSLog(@"bundlePath = %@", filePath);
+    NSString *filePath = [[NSBundle mainBundle] executablePath];
     if([[NSFileManager defaultManager] isWritableFileAtPath: filePath] == NO) {
-        NSLog(@"%@ is read only", filePath);
         return Napi::Value::From(info.Env(), true);
     }
     return Napi::Value::From(info.Env(), false);
