@@ -7,7 +7,7 @@ type NativeModule = {
 let _nativeModule: NativeModule | undefined = undefined
 
 function getNativeModule() {
-  _nativeModule = require('bindings')('CheckTranslocatedToARandomizedPath.node')
+  _nativeModule = require('bindings')('checkTranslocatedToARandomizedPath.node')
   return _nativeModule
 }
 

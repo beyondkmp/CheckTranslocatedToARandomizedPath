@@ -3,7 +3,7 @@
 ## API
 
 ```typescript
-import { is24hoursTimeFormat } from 'CheckTranslocatedToARandomizedPath'
+import { is24hoursTimeFormat } from 'checkTranslocatedToARandomizedPath'
 
 // is24hoursTimeFormat returns true if system time is 24 hours. returns false if 12 hours
 const result = is24hoursTimeFormat()
@@ -13,8 +13,8 @@ console.log(result)
 ## Setup
 
 ```shellsession
-$ git clone https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath.git
-$ cd CheckTranslocatedToARandomizedPath
+$ git clone https://github.com/beyondkmp/checkTranslocatedToARandomizedPath.git
+$ cd checkTranslocatedToARandomizedPath
 $ yarn
 ```
 

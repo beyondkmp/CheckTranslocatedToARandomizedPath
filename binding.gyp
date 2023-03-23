@@ -1,7 +1,7 @@
 {
   'targets': [
     {
-      'target_name': 'CheckTranslocatedToARandomizedPath',
+      'target_name': 'checkTranslocatedToARandomizedPath',
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
       'msvs_settings': {

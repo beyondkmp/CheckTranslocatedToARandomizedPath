@@ -10,7 +10,7 @@ pushed. Now, you need to get it reviewed and merged.
 
 After that, don't forget publish the release on the repo.
 
-- Go to https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath/releases
+- Go to https://github.com/beyondkmp/checkTranslocatedToARandomizedPath/releases
 - Click click `Draft a New Release`
 - Fill in form
 - Hit `Publish release`

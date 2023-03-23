@@ -1,5 +1,5 @@
 {
-  "name": "CheckTranslocatedToARandomizedPath",
+  "name": "checkTranslocatedToARandomizedPath",
   "version": "1.7.0",
   "description": "A thin wrapper on top of GetLocaleInfoEx",
   "main": "dist/index.js",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath.git"
+    "url": "git+https://github.com/beyondkmp/checkTranslocatedToARandomizedPath.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath/issues"
+    "url": "https://github.com/beyondkmp/checkTranslocatedToARandomizedPath/issues"
   },
-  "homepage": "https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath#readme",
+  "homepage": "https://github.com/beyondkmp/checkTranslocatedToARandomizedPath#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^16.0.0",

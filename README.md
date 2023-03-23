@@ -11,15 +11,15 @@ format
 ## Install
 
 ```shellsession
-$ yarn add CheckTranslocatedToARandomizedPath
+$ yarn add checkTranslocatedToARandomizedPath
 # or
-$ npm install --save CheckTranslocatedToARandomizedPath
+$ npm install --save checkTranslocatedToARandomizedPath
 ```
 
 ## API
 
 ```typescript
-import { is24hoursTimeFormat } from 'CheckTranslocatedToARandomizedPath'
+import { is24hoursTimeFormat } from 'checkTranslocatedToARandomizedPath'
 
 // is24hoursTimeFormat returns true if system time is 24 hours. returns false if 12 hours
 const result = is24hoursTimeFormat()
@@ -29,7 +29,7 @@ console.log(result)
 ## Documentation
 
 See the documentation under the
-[`docs`](https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath/tree/master/docs)
+[`docs`](https://github.com/beyondkmp/checkTranslocatedToARandomizedPath/tree/master/docs)
 folder.
 
 ## Supported versions
@@ -45,7 +45,7 @@ supported currently.
 ## Contributing
 
 Read the
-[Setup](https://github.com/beyondkmp/CheckTranslocatedToARandomizedPath/blob/master/docs/index.md#setup)
+[Setup](https://github.com/beyondkmp/checkTranslocatedToARandomizedPath/blob/master/docs/index.md#setup)
 section to ensure your development environment is setup for what you need.
 
 If you want to see something supported, open an issue to start a discussion
