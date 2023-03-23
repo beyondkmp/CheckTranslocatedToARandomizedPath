@@ -1,18 +1,18 @@
-#import <Foundation/Foundation.h>
-#include <sys/param.h>
-#include <sys/mount.h>
+#include <libproc.h>
+#include <unistd.h>
 
 #include <napi.h>
 
 
 Napi::Value checkTranslocatedToARandomizedPath(const Napi::CallbackInfo &info)
 {
-    NSString *filePath = [[NSBundle mainBundle] executablePath];
-    if([[NSFileManager defaultManager] isWritableFileAtPath: filePath] == NO) {
+    char path[PROC_PIDPATHINFO_MAXSIZE];
+    int pid = getpid();
+    int ret = proc_pidpath(pid, path, sizeof(path));
+    if (ret <= 0) {
         return Napi::Value::From(info.Env(), true);
     }
     return Napi::Value::From(info.Env(), false);
-
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
