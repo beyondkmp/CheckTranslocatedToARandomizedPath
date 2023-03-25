@@ -6,8 +6,14 @@
 
 Napi::Value checkTranslocatedToARandomizedPath(const Napi::CallbackInfo &info)
 {
+    Napi::Env env = info.Env();
+    int length = info.Length();
+    if (length != 1 || !info[0].IsNumber()){
+        Napi::TypeError::New(env, "Int expected").ThrowAsJavaScriptException();
+    }
+
+    int pid = info[0].ToNumber().Int32Value();
     char path[PROC_PIDPATHINFO_MAXSIZE];
-    int pid = getpid();
     int ret = proc_pidpath(pid, path, sizeof(path));
     if (ret <= 0) {
         return Napi::Value::From(info.Env(), true);

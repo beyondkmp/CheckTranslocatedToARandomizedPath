@@ -8,9 +8,9 @@ function getNativeModule() {
     _nativeModule = require('bindings')('checkTranslocatedToARandomizedPath.node');
     return _nativeModule;
 }
-function checkTranslocatedToARandomizedPath() {
+function checkTranslocatedToARandomizedPath(pid) {
     var _a;
-    const result = (_a = getNativeModule()) === null || _a === void 0 ? void 0 : _a.checkTranslocatedToARandomizedPath();
+    const result = (_a = getNativeModule()) === null || _a === void 0 ? void 0 : _a.checkTranslocatedToARandomizedPath(pid);
     return !!result;
 }
 exports.checkTranslocatedToARandomizedPath = checkTranslocatedToARandomizedPath;

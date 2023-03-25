@@ -1,5 +1,5 @@
 type NativeModule = {
-  checkTranslocatedToARandomizedPath: () => boolean
+  checkTranslocatedToARandomizedPath: (pid:number) => boolean
 }
 
 // The native binary will be loaded lazily to avoid any possible crash at start
@@ -11,7 +11,7 @@ function getNativeModule() {
   return _nativeModule
 }
 
-export function checkTranslocatedToARandomizedPath(): boolean {
-  const result = getNativeModule()?.checkTranslocatedToARandomizedPath()
+export function checkTranslocatedToARandomizedPath(pid:number): boolean {
+  const result = getNativeModule()?.checkTranslocatedToARandomizedPath(pid)
   return !!result
 }

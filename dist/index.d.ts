@@ -1,1 +1,1 @@
-export declare function checkTranslocatedToARandomizedPath(): boolean;
+export declare function checkTranslocatedToARandomizedPath(pid: number): boolean;
